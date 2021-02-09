@@ -1,0 +1,25 @@
+<html>
+  <style>
+    .highlight {
+      background-color: yellow;
+    }
+  </style>
+  <button onclick="highlight('fence')">Highlight</button>
+  <div id="inputText">The fox went over the fence</div>
+  <script type="text/javascript">
+    function highlight(text) {
+      var inputText = document.getElementById("inputText");
+      var innerHTML = inputText.innerHTML;
+      var index = innerHTML.indexOf(text);
+      if (index >= 0) {
+        innerHTML =
+          innerHTML.substring(0, index) +
+          "<span class='highlight'>" +
+          innerHTML.substring(index, index + text.length) +
+          "</span>" +
+          innerHTML.substring(index + text.length);
+        inputText.innerHTML = innerHTML;
+      }
+    }
+  </script>
+</html>

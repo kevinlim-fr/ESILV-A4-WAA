@@ -1,0 +1,47 @@
+/* Dropdown Button */
+
+body {
+  font-size: 10svw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  color: #333333;
+  background-color: #eeeeee;
+}
+
+.controlbar {
+  margin: 1vw auto;
+  background-color: #3498db;
+  color: white;
+  padding: 1vw;
+  border-radius: 1vw;
+}
+
+.shapedrop {
+  border: none;
+  position: relative;
+  display: inline-block;
+}
+
+.borderdrop {
+  border: none;
+  position: relative;
+  display: inline-block;
+}
+
+.sizedrop {
+  border: none;
+  position: relative;
+  display: inline-block;
+}
+
+.navbutt {
+  border: none;
+  position: relative;
+  display: inline-block;
+}
+
+.navpick {
+  border: none;
+  position: relative;
+  display: inline-block;
+}

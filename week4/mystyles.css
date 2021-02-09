@@ -1,0 +1,36 @@
+.element {
+  margin: 200px auto;
+  width: 250px;
+  height: 250px;
+  animation: pulse 5s infinite;
+}
+.ctrlbar {
+  margin: 100px auto;
+  height: 2vw;
+  width: 70vw;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: #bdc3c7;
+  font-size: 1vw;
+  text-align: center;
+}
+label {
+  color: #2c3e50;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1vw;
+}
+@keyframes pulse {
+  0% {
+    background-color: #001f3f;
+    border: 20px solid black;
+    border-radius: 50px;
+  }
+  100% {
+    background-color: #ff4136;
+    border: 20px solid white;
+    border-radius: 50px;
+  }
+}
+body {
+  background-color: #ececec;
+}
