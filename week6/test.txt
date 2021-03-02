@@ -1,0 +1,13 @@
+https://api.nytimes.com/svc/search/v2/articlesearch.json?q=Science&api-key=OECLSpRCwZY84Ah5G1jZhVohpLiuwBl1
+
+Console.log(fetch("https://api.nytimes.com/svc/search/v2/articlesearch.json?q=Science&api-key=OECLSpRCwZY84Ah5G1jZhVohpLiuwBl1"));
+    fetch("https://api.nytimes.com/svc/search/v2/articlesearch.json?q=Science&api-key=OECLSpRCwZY84Ah5G1jZhVohpLiuwBl1").then(response => {
+        const data = response.json();
+        console.log(response);
+    })
+    .then(data => {
+        console.log(data.data);
+    })
+    .catch(error => {
+        console.log(error);
+    });
